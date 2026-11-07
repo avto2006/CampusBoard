@@ -1,0 +1,80 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: hsl(220 25% 97%);
+  --foreground: hsl(222 40% 11%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(222 40% 11%);
+  --muted: hsl(220 20% 93%);
+  --muted-foreground: hsl(222 14% 38%);
+  --border: hsl(220 18% 86%);
+  --input: hsl(220 18% 86%);
+  --ring: hsl(346 72% 38%);
+  --primary: hsl(346 72% 38%);
+  --primary-foreground: hsl(0 0% 100%);
+  --accent: hsl(178 62% 28%);
+  --accent-foreground: hsl(0 0% 100%);
+  --destructive: hsl(0 72% 42%);
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: hsl(224 38% 7%);
+  --foreground: hsl(220 25% 94%);
+  --card: hsl(224 32% 11%);
+  --card-foreground: hsl(220 25% 94%);
+  --muted: hsl(224 26% 16%);
+  --muted-foreground: hsl(220 15% 68%);
+  --border: hsl(224 22% 22%);
+  --input: hsl(224 22% 22%);
+  --ring: hsl(346 90% 68%);
+  --primary: hsl(346 90% 68%);
+  --primary-foreground: hsl(224 38% 8%);
+  --accent: hsl(176 60% 52%);
+  --accent-foreground: hsl(224 38% 8%);
+  --destructive: hsl(0 80% 66%);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 6px);
+}
+
+@layer base {
+  * { @apply border-border; }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body), system-ui, sans-serif;
+  }
+  h1, h2, h3 { font-family: var(--font-display), var(--font-body), sans-serif; }
+  :focus-visible { @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background; }
+}
+
+@utility glass {
+  @apply bg-card/70 backdrop-blur-md border border-border/70;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
