@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 
 import { supabase } from "@/lib/supabase";
-import AddModal from "@/components/AddModal";
+import AddModal from "@/components/add-modal";
 import { REAL_EVENTS, REAL_TEAMMATES, EventItem, TeammateItem } from "../lib/data";
 
 const CATEGORIES = ["ყველა", "ჰაკათონი", "ვორქშოფი", "გაცვლითი პროგრამა", "სტაჟირება", "სხვა"];
@@ -64,7 +64,7 @@ function HomeContent() {
 
         if (!eventsError && dbEvents && dbEvents.length > 0) {
           const formattedEvents: EventItem[] = dbEvents
-            .filter((e) => !e.event_date || e.event_date >= today) // ავტომატური ვადაგასულობის ფილტრი
+            .filter((e) => !e.event_date || e.event_date >= today)
             .map((e) => ({
               id: e.id,
               title: e.title,
