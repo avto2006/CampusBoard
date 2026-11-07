@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 
 import { supabase } from "@/lib/supabase";
-import AddModal from "@/components/add-modal";
+import AddModal from "@/components/AddModal";
 import { REAL_EVENTS, REAL_TEAMMATES, EventItem, TeammateItem } from "../lib/data";
 
 const CATEGORIES = ["ყველა", "ჰაკათონი", "ვორქშოფი", "გაცვლითი პროგრამა", "სტაჟირება", "სხვა"];
