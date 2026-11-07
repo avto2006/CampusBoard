@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 
 import { supabase } from "@/lib/supabase";
-import AddModal from "@/components/add-modal";
+import AddModal from "@/components/AddModal";
 import { REAL_EVENTS, REAL_TEAMMATES, EventItem, TeammateItem } from "../lib/data";
 
 const CATEGORIES = ["ყველა", "ჰაკათონი", "ვორქშოფი", "გაცვლითი პროგრამა", "სტაჟირება", "სხვა"];
@@ -227,7 +227,7 @@ function HomeContent() {
                 <span>წარმატებით დარეგისტრირდი! შეტყობინებებს მიიღებ Gmail-ზე.</span>
               </div>
             ) : (
-              <form onSubmit={handleSubscribe} className="flex gap-2 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-800 p-1.5 rounded-2xl shadow-sm focus-within:border-emerald-500 transition-all">
+              <form onSubmit={handleSubscribe} className="flex gap-2 bg-[#1e293b]/40 dark:bg-slate-900 border border-slate-300 dark:border-slate-800 p-1.5 rounded-2xl shadow-sm focus-within:border-emerald-500 transition-all">
                 <div className="flex items-center pl-3 text-slate-400">
                   <Mail className="w-4 h-4" />
                 </div>

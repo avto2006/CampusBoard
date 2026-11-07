@@ -6,7 +6,7 @@ import { useState, Suspense } from "react";
 import { Menu, Plus, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "./theme-toggle";
-import AddModal from "@/components/add-modal";
+import AddModal from "@/components/AddModal";
 
 const LINKS = [
   { href: "/?tab=events", label: "Events", tab: "events" },

@@ -7,7 +7,7 @@ interface AddModalProps {
   onClose: () => void;
 }
 
-export default function AddModal({ isOpen, onClose }: AddModalProps) {
+export function AddModal({ isOpen, onClose }: AddModalProps) {
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     title: '',
@@ -135,3 +135,5 @@ export default function AddModal({ isOpen, onClose }: AddModalProps) {
     </div>
   );
 }
+
+export default AddModal;
