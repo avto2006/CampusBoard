@@ -6,6 +6,7 @@ import { Footer } from "@/components/layout/footer";
 import { ThemeProvider } from "@/components/layout/theme-provider";
 import { Analytics } from "@vercel/analytics/react"
 
+
 const display = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-display", display: "swap" });
 const body = Noto_Sans_Georgian({ subsets: ["latin", "georgian"], variable: "--font-body", display: "swap" });
 
