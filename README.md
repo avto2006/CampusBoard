@@ -1,44 +1,29 @@
-Banking Dashboard
+CampusBoard
 
-Modern and fully responsive financial dashboard built with Next.js, React, and Tailwind CSS. Features real-time utility bill payments, mobile top-up, currency conversion, transaction management, and dual language support (Georgian and English).
+CampusBoard is a web platform created for Georgian university students to aggregate hackathons, internships, workshops, and project teammate matching in one centralized hub.
 
 Live Demo
-https://bank-project-tau.vercel.app/
-
-GitHub Repository
-https://github.com/avto2006/Bank_project
+https://campus-board-zeta-beige.vercel.app/
 
 Tech Stack
 
-Next.js
-
-React
+React / Next.js
 
 Tailwind CSS
 
-Lucide React
+JavaScript / TypeScript
 
 Features
 
-Live financial metrics and interactive charts
+Aggregates hackathons, internships, and workshops
 
-Utility bill payments and mobile balance top-up
+Student teammate and project matching hub
 
-Transaction filtering and adding new entries
-
-Interactive virtual card management
-
-Full Georgian and English language switching
-
-Dark and Light mode support
+Fully responsive and modern UI design
 
 Setup and Installation
 
-Clone the repository:
-git clone https://github.com/avto2006/Bank_project.git
-
-Navigate to the project directory:
-cd Bank_project
+Navigate to the project directory
 
 Install dependencies:
 npm install
